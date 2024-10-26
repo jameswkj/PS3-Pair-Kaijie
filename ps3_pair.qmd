@@ -29,4 +29,8 @@ def preview_data(df):
     print(df.head())
 
 preview_data(data)
+
+def custom_function(df):
+    return [df.head(), df.describe()]
+
 ```
