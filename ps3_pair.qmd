@@ -1,6 +1,8 @@
 ---
 title: "30538 Problem Set 3: git pair"
-author: "Kaijie Wu Player 1"
+merge_conflict_name_2
+author: "Kaijie Wu Player 1", "Kaijie Wu Player 2"
+main
 format: 
   pdf:
     keep-tex: true
@@ -29,12 +31,17 @@ import altair as alt
 
 def preview_data(df):
     print(df.head())
+histogram
     hist = alt.Chart(df).mark_bar().encode(
         alt.X('Values', bin=True),
         y='count()'
     )
     return [df.head(), hist]
 
+
+    return [df.head(), df.describe()]
+   
+main
 preview_data(data)
 
 ```
