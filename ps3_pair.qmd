@@ -1,6 +1,8 @@
 ---
 title: "30538 Problem Set 3: git pair"
-author: "Kaijie Wu Player 2"
+merge_conflict_name_2
+author: "Kaijie Wu Player 1", "Kaijie Wu Player 2"
+main
 format: 
   pdf:
     keep-tex: true
