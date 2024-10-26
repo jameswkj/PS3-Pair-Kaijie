@@ -27,10 +27,7 @@ data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
 
 def preview_data(df):
     print(df.head())
-
-preview_data(data)
-
-def custom_function(df):
     return [df.head(), df.describe()]
-
+   
+preview_data(data)
 ```
