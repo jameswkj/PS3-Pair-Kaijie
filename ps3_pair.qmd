@@ -27,9 +27,21 @@ import numpy as np
 np.random.seed(42)
 data = pd.DataFrame(np.random.rand(100), columns=['Random Numbers'])
 
+import altair as alt
+
 def preview_data(df):
     print(df.head())
+histogram
+    hist = alt.Chart(df).mark_bar().encode(
+        alt.X('Values', bin=True),
+        y='count()'
+    )
+    return [df.head(), hist]
+
+
     return [df.head(), df.describe()]
    
+main
 preview_data(data)
+
 ```
